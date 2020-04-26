@@ -1,0 +1,30 @@
+.container {
+  padding: 3em;
+  margin-bottom: 1em;
+
+  input {
+    padding: 1em;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+}
+
+.list-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid burlywood;
+}
+
+.button {
+  background: transparent;
+  border: none;
+  padding: 0 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}

@@ -1,0 +1,24 @@
+<div class="container">
+  <input type="text" (keydown.enter)="onEnterPress($event)" />
+
+  <div class="todo-container">
+    <ul>
+      <li
+        *ngFor="let todo of todos"
+        class="list-item"
+        (click)="markTodo($event)"
+      >
+        <span id="{{ todo.id }}" [ngClass]="{ completed: todo.completed }">{{
+          todo.task
+        }}</span
+        ><button
+          class="button"
+          (click)="deleteTodo($event)"
+          [attr.data-todo-id]="todo.id"
+        >
+          &#10060;
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
