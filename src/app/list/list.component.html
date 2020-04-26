@@ -1,0 +1,6 @@
+<h2>BrewDog beer list:</h2>
+<ol *ngIf="beer.length > 0">
+  <li *ngFor="let b of beer">
+    <p>{{ b.name }}, {{ b.tagline }}</p>
+  </li>
+</ol>
